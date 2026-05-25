@@ -50,8 +50,8 @@ const PROBLEMS = {
     easy: {
         Point: [
             {
-                question: "You shoot a basketball from the free-throw line, 4.6 m from the hoop, at an angle of 45°. If the ball leaves your hand at a height of 2.0 m and the hoop is at 3.05 m, what initial speed do you need?",
-                answer: 7.2,
+                question: "A player shoots a free throw and makes the basket. The ball is released from a height of 2.1 m and goes straight through the hoop, which is 3.05 m high and 4.5 m away. The shot takes 0.60 seconds to reach the hoop. What is the ball’s average horizontal speed?",
+                answer: 7.5,
                 unit: "m/s"
             },
             {
@@ -105,7 +105,7 @@ const PROBLEMS = {
         Assist: [
             {
                 question: "You throw a chest pass horizontally at 12 m/s to a teammate 6.0 m away. How far does the ball drop vertically during the pass?",
-                answer: 1.23,
+                answer: 1.225,
                 unit: "m"
             },
             {
@@ -146,7 +146,7 @@ const PROBLEMS = {
                 unit: "J"
             },
             {
-                question: "An opponent dribbles the ball downward at 6.0 m/s and it bounces back up. If the contact time with the floor is 0.04 s and the ball (0.62 kg) returns at 5.5 m/s upward, what is the average force from the floor?",
+                question: "An opponent dribbles the ball downward at 6.0 m/s and it bounces back up. If the contact time with the floor is 0.04 s and the ball (0.62 kg) returns at 5.5 m/s upward, what is the average net force acting on the ball during contact with the floor?",
                 answer: 178.3,
                 unit: "N"
             },
@@ -194,7 +194,7 @@ const PROBLEMS = {
             },
             {
                 question: "A 0.62 kg basketball moving at 6.0 m/s hits the rim (which acts like a spring with k = 2500 N/m) and compresses it by some amount before bouncing back. What is the maximum compression of the rim?",
-                answer: 0.047,
+                answer: 0.0945,
                 unit: "m"
             },
             {
@@ -208,8 +208,8 @@ const PROBLEMS = {
                 unit: "m"
             },
             {
-                question: "You shoot from the free throw line (4.6 m away). The ball leaves at 2.0 m height and 45°. Using energy conservation, what is the ball's speed when it reaches hoop height of 3.05 m? (Initial speed = 7.2 m/s, g = 9.8 m/s²)",
-                answer: 5.74,
+                question: "You shoot from the free throw line (4.6 m away). The ball is launched at 7.2 m/s from a height of 2.0 m and angle of 45° above the horizontal. What is the ball's speed when it reaches hoop height of 3.05 m?",
+                answer: 5.59,
                 unit: "m/s"
             }
         ],
@@ -242,7 +242,7 @@ const PROBLEMS = {
         ],
         Assist: [
             {
-                question: "You throw a lob pass at 10 m/s at 60° above horizontal from a height of 1.8 m. Your teammate catches it at the same height. What horizontal distance does the ball travel? (g = 9.8 m/s²)",
+                question: "You throw a lob pass at 10 m/s at 60° above horizontal from a height of 1.8 m. Your teammate catches it at the same height. What horizontal distance does the ball travel?",
                 answer: 8.83,
                 unit: "m"
             },
@@ -252,7 +252,7 @@ const PROBLEMS = {
                 unit: "m/s"
             },
             {
-                question: "You pass the ball at 11 m/s horizontally from 2.0 m height. Your teammate catches it at 1.0 m height, 9.0 m away. What is the ball's speed when caught? (g = 9.8 m/s²)",
+                question: "You pass the ball at 11 m/s horizontally from 2.0 m height. Your teammate catches it at 1.0 m height, 9.0 m away. What is the ball's speed when it drops to a height of 1.0 m?",
                 answer: 11.4,
                 unit: "m/s"
             },
@@ -280,11 +280,11 @@ const PROBLEMS = {
             },
             {
                 question: "You apply a tangential force of 8.0 N to knock the ball (0.62 kg, radius 0.12 m) from an opponent's hand. Treating the ball as a solid sphere (I = 2/5 mr²), what is the resulting angular acceleration?",
-                answer: 268,
+                answer: 268.8,
                 unit: "rad/s²"
             },
             {
-                question: "An opponent (85 kg) is moving at 3.5 m/s. You (75 kg) run at 4.5 m/s toward them and collide, both stopping. Is momentum conserved? What is the total momentum before the collision?",
+                question: "An opponent (85 kg) is moving at 3.75 m/s in the +x-direction. You (75 kg) run at 4.25 m/s toward them in the -x-direction and collide. What is the total momentum before the collision?",
                 answer: 0,
                 unit: "kg·m/s"
             },
@@ -316,8 +316,8 @@ const PROBLEMS = {
                 unit: "N·s"
             },
             {
-                question: "You (82 kg) jump from rest and reach a peak height of 0.75 m. What was the average net upward force during your 0.35 s push-off phase? (g = 9.8 m/s²)",
-                answer: 1052,
+                question: "You (82 kg) jump straight upward and leave the ground with a vertical speed of 3.6 m/s after pushing off for 0.30 s. What was the average net upward force acting on you during the push-off phase?",
+                answer: 984,
                 unit: "N"
             }
         ]
@@ -327,7 +327,7 @@ const PROBLEMS = {
         Point: [
             {
                 question: "During a shot, the force on the ball varies as F(t) = 120t - 200t² (N) for 0 ≤ t ≤ 0.4 s. If the 0.62 kg ball starts from rest, what is its speed at t = 0.4 s? (Integrate F(t) to find impulse)",
-                answer: 7.74,
+                answer: 8.602,
                 unit: "m/s"
             },
             {
@@ -337,7 +337,7 @@ const PROBLEMS = {
             },
             {
                 question: "The ball's height during a shot follows h(t) = 2.0 + 6.5t - 4.9t². Find the ball's speed (magnitude of velocity vector) at t = 0.8 s if horizontal velocity is constant at 5.5 m/s.",
-                answer: 5.97,
+                answer: 5.66,
                 unit: "m/s"
             },
             {
@@ -346,8 +346,8 @@ const PROBLEMS = {
                 unit: "m/s"
             },
             {
-                question: "The ball follows a trajectory where horizontal position is x(t) = 6t and vertical position is y(t) = 1.8 + 7t - 4.9t² (meters). At what time does the ball reach its maximum height, and what is that maximum height?",
-                answer: 4.31,
+                question: "The ball follows a trajectory where its vertical position is y(t) = 1.8 + 7t - 4.9t² (meters). What is the maximum height the ball reaches?",
+                answer: 4.30,
                 unit: "m"
             }
         ],
@@ -374,34 +374,34 @@ const PROBLEMS = {
             },
             {
                 question: "A ball (m = 0.62 kg) hits the floor with velocity components vx = 4.0 m/s, vy = -6.0 m/s. After bouncing, vy reverses and is reduced by 20% (coefficient of restitution = 0.8), vx unchanged. What is the ball's speed after the bounce?",
-                answer: 6.4,
+                answer: 6.25,
                 unit: "m/s"
             }
         ],
         Assist: [
             {
-                question: "During a pass, your arm exerts a force F(t) = 80cos(πt/0.3) N for 0 ≤ t ≤ 0.15 s on the 0.62 kg ball (initially at rest). What is the ball's final speed? (Integrate: ∫₀^0.15 80cos(πt/0.3)dt)",
+                question: "During a pass, your arm exerts a force F(t) = 80cos(πt/0.3) N for 0 ≤ t ≤ 0.15 s on the 0.62 kg ball (initially at rest). What is the ball's final speed?",
                 answer: 12.3,
                 unit: "m/s"
             },
             {
-                question: "A pass experiences air drag F_drag = -0.05v² (N) on a 0.62 kg ball with initial speed 14 m/s. Using the approximation v ≈ v₀/(1 + (0.05·v₀·t)/m), find the speed after 0.5 s.",
-                answer: 12.9,
+                question: "A pass experiences air drag given by F_drag = -0.05v² (N) on a 0.62 kg basketball with initial speed 14 m/s. Using Newton's 2nd law, find the speed of the ball after 0.5 s.",
+                answer: 8.94,
                 unit: "m/s"
             },
             {
                 question: "A bounce pass hits the floor at angle 35° with speed 10 m/s. The coefficient of restitution is 0.85 (only affects vertical component). At what angle does it leave the floor?",
                 answer: 30.5,
-                unit: "degrees"
+                unit: "°"
             },
             {
-                question: "You throw a pass and your wrist exerts torque τ(t) = 4.0 - 20t (N·m) on the ball (treated as solid sphere, I = 2/5 mr², m = 0.62 kg, r = 0.12 m) from t = 0 to t = 0.2 s. What is the ball's final angular velocity? (Integrate τ/I)",
-                answer: 268,
+                question: "You throw a pass and your wrist exerts torque τ(t) = 4.0 - 20t (N·m) on the ball (treated as solid sphere, I = 2/5 mr², m = 0.62 kg, r = 0.12 m) from t = 0 to t = 0.2 s. What is the ball's final angular velocity?",
+                answer: 112,
                 unit: "rad/s"
             },
             {
                 question: "Your hand moves along x(t) = 0.4t² + 0.3t³ during a pass (meters, 0 ≤ t ≤ 0.4 s). The 0.62 kg ball is in contact the whole time. What is the net force on the ball at t = 0.3 s? (F = ma, a = x''(t))",
-                answer: 1.61,
+                answer: 0.83,
                 unit: "N"
             }
         ],
@@ -412,8 +412,8 @@ const PROBLEMS = {
                 unit: "m/s"
             },
             {
-                question: "The ball (m = 0.62 kg, r = 0.12 m, I = 2/5mr²) is spinning at ω = 20 rad/s while moving at 6 m/s. You apply a torque τ = -3.0 N·m for 0.05 s. What is the new angular velocity?",
-                answer: -30.2,
+                question: "The ball (m = 0.62 kg, r = 0.12 m, I = 2/5mr²) is spinning at ω = 20 rad/s while moving at 6 m/s. You apply a torque τ = -3.0 N·m for 0.05s while going for a steal. What is the magnitude of the new angular velocity?",
+                answer: 22,
                 unit: "rad/s"
             },
             {
@@ -422,8 +422,8 @@ const PROBLEMS = {
                 unit: "m/s²"
             },
             {
-                question: "You (75 kg) start from rest. A force F(t) = 400e^(-2t) N pushes you forward. What is your velocity at t = 1.0 s? (∫₀^1 F/m dt)",
-                answer: 3.16,
+                question: "You (75 kg) start from rest. A force F(t) = 400e^(-2t) N pushes you forward. What is your velocity at t = 1.0 s?",
+                answer: 2.31,
                 unit: "m/s"
             },
             {
@@ -434,8 +434,8 @@ const PROBLEMS = {
         ],
         Block: [
             {
-                question: "During a block, your hand exerts force F(t) = 800sin(πt/0.02) N on the ball for 0 ≤ t ≤ 0.02 s. The ball mass is 0.62 kg and initial speed is 8 m/s. What is the ball's final speed? (Ball reverses direction; impulse = ∫F dt)",
-                answer: 8.4,
+                question: "During a block, your hand exerts force F(t) = 800sin(πt/0.02) N on the ball for 0 ≤ t ≤ 0.02 s. The ball mass is 0.62 kg and initial speed is 8 m/s. What is the ball's final speed?",
+                answer: 24.4,
                 unit: "m/s"
             },
             {
@@ -454,8 +454,8 @@ const PROBLEMS = {
                 unit: "m"
             },
             {
-                question: "A ball (0.62 kg) is shot at v = 10 m/s at 60° above horizontal. You block it at its peak, pushing it horizontally in the opposite direction at 5.0 m/s. What impulse did you deliver? (Find change in momentum vector magnitude)",
-                answer: 6.35,
+                question: "A ball (0.62 kg) is shot at v = 10 m/s at 60° above horizontal. You block it at its peak, pushing it horizontally in the opposite direction at 5.0 m/s. What impulse did you deliver?",
+                answer: 8.20,
                 unit: "N·s"
             }
         ]
