@@ -174,7 +174,7 @@ const PROBLEMS = {
             },
             {
                 question: "You (80 kg) jump with a takeoff speed of 3.2 m/s. What is your gravitational potential energy at the peak of your jump? (g = 9.8 m/s²)",
-                answer: 399.6,
+                answer: 409.6,
                 unit: "J"
             },
             {
@@ -821,7 +821,7 @@ function showRoundSummary(score, levelChange) {
     elements.gradeLetter.textContent = `${score}/5`;
     elements.gradeLetter.style.fontSize = '2.5rem';
     document.querySelector('.grade-title').textContent = `Round ${state.round} Complete!`;
-    document.querySelector('.grade-score').innerHTML = `You are now <strong style="color:#ff6b35">${player.name}</strong>`;
+    document.querySelector('.grade-score').innerHTML = `${levelChange > 0 ? 'You have upgraded to' : levelChange < 0 ? 'You have downgraded to' : 'You remain as'} <strong style="color:#ff6b35">${player.name}</strong>`;
     elements.gradeMessage.textContent = `${arrow} ${LEVEL_DESCRIPTIONS[state.level].split('—')[1].trim()} ${levelChange >= 0 ? 'Keep balling — upgrade your player!' : 'Get more questions right to climb back up!'}`;
     // Show player image
     let imgEl = document.getElementById('player-img-summary');
