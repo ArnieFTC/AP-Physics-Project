@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+ 
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" href="https://public-frontend-cos.metadl.com/mgx/img/favicon_atoms.ico" type="image/x-icon">
+    <title>AP Physics C: Basketball</title>
+    <link rel="stylesheet" href="./style.css">
+</head>
+ 
+<body>
+ 
+    <div style="position:fixed; top:10px; right:15px; font-size:11px; color:#888; text-align:right; z-index:999;">
+        Made by Arnie Sreeram & Felix Dschung<br>Weston High School — 2026 AP Physics C Project
+    </div>
+ 
+    <div id="screen-difficulty" class="screen active">
+        <div class="title-container">
+            <svg class="title-icon" viewBox="0 0 100 100" width="80" height="80">
+                <circle cx="50" cy="50" r="45" fill="#ff6b35" stroke="#c4a35a" stroke-width="3"/>
+                <path d="M50 5 Q50 50 50 95" stroke="#1a1a2e" stroke-width="2" fill="none"/>
+                <path d="M5 50 Q50 50 95 50" stroke="#1a1a2e" stroke-width="2" fill="none"/>
+                <path d="M15 20 Q50 35 85 20" stroke="#1a1a2e" stroke-width="2" fill="none"/>
+                <path d="M15 80 Q50 65 85 80" stroke="#1a1a2e" stroke-width="2" fill="none"/>
+            </svg>
+            <h1 class="game-title">AP Physics C: Basketball</h1>
+            <p class="subtitle">Mechanics Edition</p>
+        </div>
+        <div class="difficulty-buttons">
+            <button class="btn btn-easy" data-difficulty="easy">
+                <span class="btn-label">Easy</span>
+                <span class="btn-desc">Start as Jalen Brunson (Level 7)</span>
+            </button>
+            <button class="btn btn-medium" data-difficulty="medium">
+                <span class="btn-label">Medium</span>
+                <span class="btn-desc">Start as Derrick White (Level 5)</span>
+            </button>
+            <button class="btn btn-hard" data-difficulty="hard">
+                <span class="btn-label">Hard</span>
+                <span class="btn-desc">Start as Goga Bitadze (Level 3)</span>
+            </button>
+        </div>
+    </div>
+ 
+    <div id="screen-game" class="screen">
+ 
+        <div id="player-banner" class="player-banner"></div>
+ 
+        <div class="game-header">
+            <div class="scene-indicator">
+                <span id="scene-label">Round 1/5 — Scene 1/5</span>
+                <span id="scene-name">Point</span>
+            </div>
+            <div class="timer-container">
+                <svg class="timer-icon" viewBox="0 0 24 24" width="20" height="20">
+                    <circle cx="12" cy="12" r="10" fill="none" stroke="#ff6b35" stroke-width="2"/>
+                    <line x1="12" y1="12" x2="12" y2="6" stroke="#ff6b35" stroke-width="2" stroke-linecap="round"/>
+                    <line x1="12" y1="12" x2="16" y2="12" stroke="#c4a35a" stroke-width="1.5" stroke-linecap="round"/>
+                </svg>
+                <span id="timer">90</span>s
+            </div>
+            <div class="score-display">
+                Score: <span id="score">0</span>/5
+            </div>
+        </div>
+ 
+        <div class="game-content">
+            <div id="scene-svg" class="scene-illustration"></div>
+            <div class="problem-container">
+                <p id="problem-text" class="problem-text"></p>
+                <div class="answer-section">
+                    <div class="input-group">
+                        <input type="number" id="answer-input" placeholder="Enter numerical answer" step="any">
+                        <span id="answer-unit" class="unit-label">m/s</span>
+                    </div>
+                    <button id="submit-btn" class="btn btn-submit">Submit</button>
+                </div>
+                <div id="feedback" class="feedback hidden"></div>
+            </div>
+        </div>
+    </div>
+ 
+    <div id="screen-grade" class="screen">
+        <div class="grade-container">
+            <h2 class="grade-title">Game Over!</h2>
+            <div class="grade-circle">
+                <span id="grade-letter" class="grade-letter">A</span>
+            </div>
+            <p class="grade-score">Level Reached: <span id="final-score">0</span>/10</p>
+            <p id="grade-message" class="grade-message"></p>
+            <button id="play-again-btn" class="btn btn-play-again">Play Again</button>
+        </div>
+    </div>
+ 
+    <script type="module" src="./script.js"></script>
+</body>
+ 
+</html>
